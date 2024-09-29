@@ -1,0 +1,333 @@
+.CalendarTableDetails {
+    width: 50%;
+    /* background-color: #efefef; */
+    display: flex;
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+    border-radius: 10px 10px 0px 0px;
+    flex-direction: column;
+}
+
+.SwitchTimeButton {
+    width: 100%;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    display: flex;
+    text-align: center;
+}
+
+.SwitchTimeButtonLi {
+    display: flex;
+}
+
+.SwitchTimeButtonLiTime {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.SwitchTimeButtonLi img {
+    width: 35px;
+    height: 35px;
+    padding-top: 3px;
+    padding-left: 3px;
+    margin-right: 3px;
+}
+
+.SwitchTimeButtonLi img:hover {
+    opacity: 0.8;
+}
+
+/* 星期几 */
+.weekTotal {
+    display: flex;
+    width: 100%;
+    /* background-color: #c0c0c0; */
+    justify-content: space-between;
+}
+
+.weekLi {
+    width: 13.7%;
+    height: 2.3rem;
+    text-align: center;
+    line-height: 2.3rem;
+    flex-grow: 1;
+}
+
+.weekDayLi {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.SpaceDisplay {
+    width: 14%;
+    /* 每个元素占据容器的 1/7 宽度 */
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* background-color: #76cdfc; */
+    padding: 0.5rem;
+    margin-top: 0.3%;
+    margin-left: 0.2%;
+}
+
+.MonthYearDisplay {
+    width: 14%;
+    /* 每个元素占据容器的 1/7 宽度 */
+    box-sizing: border-box;
+    /* background: #ececec; */
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.3%;
+    margin-left: 0.2%;
+}
+
+.MonthYearDisplay:hover {
+    /* color: #03a7ff; */
+    opacity: 0.8;
+}
+
+/* 全选按钮 */
+.SelectAllTimeTotal,
+.DeleteAllTimeTotal {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 0.2rem 0rem 0rem 0rem;
+}
+
+.SelectAllBtn,
+.DeleteAllBtn {
+    text-align: center;
+    width: 25%;
+    height: 2rem;
+    border-radius: 5px;
+    line-height: 2rem;
+    margin-right: 3px;
+}
+
+.SelectAllBtn {
+    background-color: #76cdfc;
+}
+
+.DeleteAllBtn {
+    background-color: #F34E4E;
+}
+
+.SelectAllBtn:hover,
+.DeleteAllBtn:hover {
+    opacity: 0.8;
+}
+
+/* 右边设置 */
+.CalendarSettingsTotal {
+    width: 50%;
+    /* background-color: #da0f0f; */
+    display: flex;
+    /* flex-direction: row; */
+    margin-top: 0.4rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    flex-direction: column;
+    border-radius: 5px;
+    /* background-color: #ececec; */
+}
+
+.CalendarTableDetailsTotal {
+    display: flex;
+    width: 100%;
+
+}
+
+.SetClassTime {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    /* background-color: #b3b3b3;    */
+    margin: 0 auto;
+    /* color: white; */
+    /* background-color: rgb(236, 236, 236); */
+}
+
+.SetClassTime:hover {
+    /* border-radius: 5px 5px 0px 0px; */
+    background-color: #c0c0c0;
+}
+
+.SetClassTimeImg {
+    padding: 3px;
+}
+
+.SetClassTimetext {
+    font-size: 1rem;
+    padding: 3px;
+}
+
+.SetClassTimeShow {
+    width: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+    /* display: none; */
+}
+
+.noteTotal {
+    width: 90%;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.noteTotal span {
+    color: #F34E4E;
+}
+
+.rightweekLiTotal {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.rightweekLiTotal:first-child {
+    padding-top: 3px;
+}
+
+.rightweekLiTotal:last-child {
+    padding-bottom: 3px;
+}
+
+/* 下拉框 */
+.timeSelect,
+.weekSelect {
+    z-index: 999;
+    text-align: center;
+    background-color: #fff;
+    /* 自定义背景颜色，根据需要进行调整 */
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+select {
+    text-align: center;
+    appearance: none;
+    /* 取消默认样式 */
+    -webkit-appearance: none;
+    /* 兼容性代码，用于Webkit浏览器 */
+    -moz-appearance: none;
+    /* 兼容性代码，用于Firefox浏览器 */
+    padding: 5px;
+    /* 自定义填充样式，根据需要进行调整 */
+    background-color: transparent;
+    /* 设置背景为透明，取消点击效果 */
+    outline: none;
+    /* 取消点击时的外边框效果 */
+    border-radius: 5px;
+    border: 1px solid rgb(178, 178, 178);
+}
+
+.rightweekLiTotal span {
+    padding: 3px 0px 0px 5px;
+}
+
+/* 确定时间按钮 */
+.fixHourBtnTotal {
+    /* width: 40%; */
+    /* text-align: center; */
+}
+
+.SetClassTimeShowFirst {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixHourBtn {
+    margin: 0 auto;
+    text-align: center;
+    width: 60px;
+    background-color: #76cdfc;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 1px solid rgb(178, 178, 178);
+}
+
+.deleteAllBtn {
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    background-color: #F34E4E;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 1px solid rgb(178, 178, 178);
+}
+
+.fixHourBtn:hover {
+    opacity: 0.8;
+}
+
+.rightWeekShowLi {
+    padding: 5px;
+    margin-left: 4rem;
+}
+
+.rightweekLiTotalfirst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* 调整行间距 */
+    max-height: 500px; /* 设置最大高度为500px */  
+    overflow: auto; /* 超出高度时显示滚动条 */  
+}
+
+.ShowSelectedTimePeriodsLi {
+    padding: 6px 3px 6px 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(178, 178, 178);
+    font-size: 12px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.ShowSelectedTimePeriodsLi:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.SpecificTimeDisplay {
+    align-self: flex-start;
+    /* 不填充父元素的高度 */
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid rgb(178, 178, 178);
+}
+
+.SpecificTimeDisplay:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.DaysSelectedRed {
+    background-color: rgb(243, 78, 78);
+}
+
+.SetClassTimeCount{
+    font-size: 1rem;
+}
+
+/* @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .blinking-text {
+    animation: blink 1s infinite;
+  } */

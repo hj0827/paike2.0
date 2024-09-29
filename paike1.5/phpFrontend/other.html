@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/public.css">
+    <script src="../js/public.js"></script>
+    <script src="../js/vue.js"></script>
+</head>
+
+<body>
+    <div class="total" v-cloak>
+    <!-- 提示 -->
+    <div class="container">
+        <!-- 添加容器中的内容 -->
+        <div class="overlay"></div>
+    </div>
+    <!-- 遮罩 -->
+    <div class="container1" v-show="isContainerVisible">
+        <!-- 添加容器中的内容 -->
+        <div class="overlay1">
+            <div class="editTotal" id="editTotal">
+                编辑
+            </div>
+            <!-- 显示要删除的内容 -->
+            <div class="ContentDisplayTotal"></div>
+            <div class="operatingButton">
+                <div class="deleteTotal editTotalText">
+                    <input class="editTotalBtn editTotalBtndelete" type="button" value="删除">
+                </div>
+                <!-- <div class="modifyTotal editTotalText">
+                    <input class="editTotalBtn editTotalBtnmodify" type="button" value="修改">
+                </div> -->
+                <div class="cancelTotal editTotalText">
+                    <input class="editTotalBtn cancelButton" type="button" value="取消">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- logo -->
+        <!-- 第一层 -->
+        <div class="indexLogo">
+            <!-- logo图片 -->
+            <div class="indexLogoImage">
+                <img src="../images/logoBai.png" alt="">
+            </div>
+            <div class="indexTitle">
+                排课系统
+            </div>
+        </div>
+
+        <!-- 第二层 -->
+        <div class="indexSecondTotal">
+            <!-- 左边导航栏 -->
+            <div class="leftNavTotal" :style="{ height: (browserHeight - 40) + 'px' }">
+                <div class="leftNavTotalUl">
+                    <ul>
+                        <a href="index.html">
+                            <li id="discoloration">日历</li>
+                        </a>
+                        <a href="Schedule.html">
+                            <li>排课</li>
+                        </a>
+                        <a href="Query.html">
+                            <li>查询</li>
+                        </a>
+                        <a href="About.html">
+                            <li>关于</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右边 -->
+            <div class="rightNavTotal">
+                <!-- 右边顶部导航栏 -->
+                <div class="rightTopNavTotal">
+                    <!-- ul -->
+                    <div class="rightTopNavUl">
+                        <ul>
+                            <a href="../index.html">
+                                <li>日历表</li>
+                            </a>
+                            <a href="other.html">
+                                <li id="rightTopNavUlLi">其他</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-- 日历表（左边） -->
+                    <div class="CalendarTableDetails">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
